@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'">
+  <title>Electron File Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Electron File Explorer</h1>
+    <p class="author">Зюряев Михаил Дмитриевич, группа ТРПО23-3, вариант 2</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Содержимое каталога</h2>
+      <button id="list-btn">Показать содержимое каталога</button>
+      <p id="dir-path" class="muted"></p>
+      <ul id="dir-list"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Информация о системе</h2>
+      <button id="sys-btn">Обновить</button>
+      <table id="sys-table"><tbody></tbody></table>
+    </section>
+  </main>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
