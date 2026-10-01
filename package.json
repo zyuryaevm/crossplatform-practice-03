@@ -1,0 +1,29 @@
+{
+  "name": "electron-file-explorer",
+  "version": "1.0.0",
+  "description": "Electron File Explorer — практическая работа № 3 по кросс-платформенной разработке",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "Зюряев Михаил Дмитриевич <zyuryaevm@gmail.com>",
+  "license": "ISC",
+  "build": {
+    "appId": "ru.fa.student.fileexplorer",
+    "productName": "Electron File Explorer",
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    },
+    "mac": {
+      "target": "dmg"
+    }
+  },
+  "devDependencies": {
+    "electron": "^44.5.1",
+    "electron-builder": "^26.15.3"
+  }
+}
