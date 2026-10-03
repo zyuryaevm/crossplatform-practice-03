@@ -19,3 +19,12 @@ npm install
 npm start      # запуск приложения
 npm run dist   # сборка дистрибутива в dist/
 ```
+
+## Сборка
+
+Дистрибутив собран `electron-builder` 26.15.3 на macOS (arm64), Electron 44.5.1:
+
+| Файл | Размер |
+|---|---|
+| `Electron File Explorer-1.0.0-arm64.dmg` | 121,8 МБ |
+| собственный код приложения (`app.asar`) | 8,7 КБ |
